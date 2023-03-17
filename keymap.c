@@ -1,11 +1,10 @@
 #include QMK_KEYBOARD_H
 
 #define _COLEMAK 0
-#define _KORE 4
 #define _LOWER 1
 #define _RAISE 2
 #define _ADJUST 3
-
+#define _KORE 4
 // home row mods - Base Layer
 /*#define H_Z LSFT_T(KC_Z)
 #define H_X LCTL_T(KC_X)
@@ -46,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                               KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_SCLN,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,     TO(1),             TO(1)  ,  KC_K,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT,
+     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,     TO(4),             TO(4)  ,  KC_K,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_LGUI, MO(1),   KC_ENT,                    KC_SPC,  MO(2),   KC_CAPS
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
